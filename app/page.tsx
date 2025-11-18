@@ -48,7 +48,7 @@ export default function Home() {
       href="mailto:volunteer@example.com"
       className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl shadow transition"
     >
-      📩 メールで問い合わせ
+      📩 メールでお問い合わせ
     </a>
 
     {/* LINEボタン */}
@@ -57,7 +57,7 @@ export default function Home() {
       target="_blank"
       className="flex-1 text-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl shadow transition"
     >
-      💚 LINEで問い合わせ
+      💚 LINEでお問い合わせ
     </a>
 
   </div>

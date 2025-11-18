@@ -8,7 +8,7 @@ export default function Header() {
 
         <nav className="flex gap-4 text-sm font-medium">
           <a href="/" className="hover:underline">ホーム</a>
-          <a href="/about" className="hover:underline">サークル紹介（準備中）</a>
+          <a href="/about" className="hover:underline">サークル紹介<br/>（準備中）</a>
           <a href="/gallery" className="hover:underline">ギャラリー</a>
         </nav>
       </div>
