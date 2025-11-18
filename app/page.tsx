@@ -14,12 +14,9 @@ export default function Home() {
 
 	<Section title="私たちについて">
         <p>
-	cocon（ココン）とはフランス語で「繭」です。
-	繭の中のような暖かい空間で、糸を紡ぐように
-	人とのつながりを大切にしたいと
-	思いからつけました。
-
-          みんなで楽しく、元気に活動しています！
+	cocon（ココン）とはフランス語で「繭」です。<br/>
+	繭の中のような暖かい空間で、糸を紡ぐように人とのつながりを大切にしたいと思いからつけました。<br/>
+	みんなで楽しく、元気に活動しています！
         </p>
       </Section>
 
@@ -39,13 +36,32 @@ export default function Home() {
         </ul>
       </Section>
 
-<Section title="参加・お問い合わせ">
-        <p>
-          興味がある方はお気軽にご連絡ください！
-          <br />
-          メール：volunteer@example.com
-        </p>
-      </Section>
+<Section title="ご依頼・お問い合わせ">
+  <p className="mb-4">
+    お気軽にご連絡・ご相談ください！
+  </p>
+
+  <div className="flex flex-col sm:flex-row gap-4">
+
+    {/* メールボタン */}
+    <a
+      href="mailto:volunteer@example.com"
+      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl shadow transition"
+    >
+      📩 メールで問い合わせ
+    </a>
+
+    {/* LINEボタン */}
+    <a
+      href="https://lin.ee/xxxxx"   // ← LINE公式アカウントURLをここに入れる！
+      target="_blank"
+      className="flex-1 text-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl shadow transition"
+    >
+      💚 LINEで問い合わせ
+    </a>
+
+  </div>
+</Section>
       <Footer />
     </>
   );

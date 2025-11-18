@@ -4,24 +4,36 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[60vh] flex items-center justify-center bg-orange-100">
+    <section className="relative w-full h-[70vh] flex items-center justify-center bg-orange-50">
+      {/* 背景ロゴ */}
       <Image
         src="/cocon-logo.png"
         alt="Volunteer"
         fill
-        className="object-cover brightness-95"
+        className="object-contain opacity-90"
       />
-      <div className="absolute inset-0 bg-white/40" />
 
+      {/* 下部カード */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative text-center"
+        className="
+          absolute bottom-6 
+          mx-auto 
+          bg-white/90 
+          backdrop-blur-sm 
+          shadow-lg 
+          p-6 
+          rounded-xl 
+          text-center 
+          max-w-[90%] 
+          md:max-w-xl
+        "
       >
-        <h1 className="text-4xl font-bold text-orange-700 drop-shadow">
+        <h1 className="text-3xl md:text-4xl font-bold text-orange-700">
           地域を笑顔に
         </h1>
-        <p className="mt-4 text-lg text-orange-900 font-medium">
+        <p className="mt-3 text-orange-900 font-medium">
           困っている方へ、あたたかい手を。
         </p>
       </motion.div>
